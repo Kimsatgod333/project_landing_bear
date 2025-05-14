@@ -1,9 +1,8 @@
 /* desktop 1250~1920px */
 /* tablet 1249~850px */
 @media screen and (max-width:1249px) {
-    #wrap .intro .container {
-        max-width:864px;
-    }
+    #wrap .intro {padding:100px 80px;}
+    #wrap .intro .container {}
     #wrap .intro .container h1:nth-child(2) {font-size:3.125rem;}
     #wrap .intro .container .sponsor_btn {
         width:270px; line-height:62px;
@@ -16,9 +15,8 @@
 }/* 1249 end */
 /* mobile 849~320px */
 @media screen and (max-width:849px) {
-    #wrap .intro .container {
-        max-width:410px;
-    }
+    #wrap .intro {padding:100px 15px;}
+    #wrap .intro .container {}
     #wrap .intro .container h1:nth-child(2) {font-size:1.875rem;}
     #wrap .intro .container .sponsor_question {}
 }/* 849 end */
