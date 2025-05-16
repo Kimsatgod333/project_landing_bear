@@ -19,7 +19,6 @@ body * {transition:all 0.5s;}
     padding:100px 0;
 }
 #wrap .intro .container {
-    border:1px solid aqua;
     max-width:1250px;
     min-width:320px;
     position:relative;
@@ -74,7 +73,6 @@ body * {transition:all 0.5s;}
 }
 #wrap .quiz .container {
     max-width:1250px; min-width:320px;
-    border:1px solid aqua;
     margin:0 auto;
     display:grid;/* 왼쪽퀴즈, 오른쪽 참여현황 정렬 grid */
     grid-template-columns:repeat(2, 1fr);
@@ -156,8 +154,139 @@ body * {transition:all 0.5s;}
     border-radius:50px;
 }
 /* 4행 ========== 빙하면적감소 */
+#wrap .area {
+    background:url(../images/50_bg.png) center / cover;
+}
+#wrap .area .container {
+    max-width:1250px; min-width:320px;
+    margin:0 auto;
+    border:1px solid pink;
+}
+#wrap .area .container * {color:#fff;}
+#wrap .area .container h2 {
+    font-size:3.438rem;
+    font-weight:500;
+    line-height:1.2;
+}
+#wrap .area .container h2 em {
+    display:inline-block;
+    width:max-content;
+    background-color:#fff;
+    color:#000;
+}
+#wrap .area .container p:nth-child(2) {
+    margin:81px 0;
+    font-size:2.125rem;
+    font-weight:700;
+}
+#wrap .area .container p:nth-child(3) {
+    width:100%;
+}
+#wrap .area .container p:nth-child(3) img {
+    width:100%;
+}
 /* 5행 ========== 인류재앙 */
+#wrap .disaster {
+    background:#f5f5f5;
+    padding:200px 0;
+}
+#wrap .disaster .container {
+    max-width:1250px; min-width:320px; /* 큰범위값 세팅후 @media 규칙내에서 태블릿, 모바일에 맞는 레이아웃 재수정하여 반응형 제작 */
+    margin:0 auto;
+    text-align:center;
+}
+#wrap .disaster .container h2 {
+    font-size:3.438rem;
+    font-weight:500;
+}
+#wrap .disaster .container p {font-size:1.25rem;}
+#wrap .disaster .container > p {
+    margin:55px 0;
+}
+#wrap .disaster .container .list {
+    display:flex;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+}
+#wrap .disaster .container .list li {
+    flex:1;
+    background-color:#fff;
+}
+#wrap .disaster .container .list li .bg {
+    position:relative;
+    height:320px;
+}
+#wrap .disaster .container .list li .bg::before {
+    display:block;
+    width:100%; height:100%;
+    position:absolute;
+    left:0; top:0;
+    content:'';
+    background:linear-gradient(#000 20%, transparent 55%);
+    z-index:50;
+}
+#wrap .disaster .container .list li .bg h3 {
+    font-size:2.688rem;
+    font-weight:700;
+    padding-top:48px;
+    line-height:1.2;
+    color:#fff;
+    margin-bottom:11px;
+    position:relative;/* bg::before에 position:absolute를 준것으로 인해 글자가 보이지 않는 현상 발생,포지션이 있어야 z-index값을 줄수 있기 때문에 포지션을 주고, z-index값을 bg::before보다 높게 주어서 해결 */
+    z-index:60;
+}
+#wrap .disaster .container .list li .bg p {
+    color:#fff;
+    position:relative;
+    z-index:60;/* bg::before에 position:absolute를 준것으로 인해 글자가 보이지 않는 현상 발생,포지션이 있어야 z-index값을 줄수 있기 때문에 포지션을 주고, z-index값을 bg::before보다 높게 주어서 해결 */
+}
+#wrap .disaster .container .list li > p {
+    height:250px;
+    padding:20px 20px;
+    line-height:1.7;
+}
+/* 5행 배경 개별 선택자 */
+#wrap .disaster .container .list li:nth-child(1) .bg {
+    background:url(../images/28.png) center 45% / cover;
+}
+#wrap .disaster .container .list li:nth-child(2) .bg {
+    background:url(../images/27.png) center 60% / cover;
+}
+#wrap .disaster .container .list li:nth-child(3) .bg {
+    background:url(../images/wwf.jpg) center 80% / cover;
+}
 /* 6행 ========== 지구위기 */
+#wrap .crisis {
+    background:url(../images/50_bg.png) center / cover;
+}
+#wrap .crisis .container {
+    max-width:1250px; min-width:320px;
+    margin:0 auto;
+    border:1px solid pink;
+}
+#wrap .crisis .container * {color:#fff;}
+#wrap .crisis .container h2 {
+    font-size:3.438rem;
+    font-weight:500;
+    line-height:1.2;
+}
+#wrap .crisis .container h2 em {
+    display:inline-block;
+    width:max-content;
+    background-color:#fff;
+    color:#000;
+}
+#wrap .crisis .container p:nth-child(2) {
+    margin:81px 0;
+    font-size:2.125rem;
+    font-weight:700;
+}
+#wrap .crisis .container p:nth-child(3) {
+    width:100%;
+}
+#wrap .crisis .container p:nth-child(3) img {
+    width:100%;
+}
 /* 7행 ========== WWF단체홍보 */
 /* 8행 ========== 다양한활동 */
 /* 9행 ========== 감사선물 */
